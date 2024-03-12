@@ -1,0 +1,363 @@
+import 'package:authentication_app/Authentication/SignIn.dart';
+import 'package:flutter/material.dart';
+
+class SignUpScreen extends StatelessWidget {
+  const SignUpScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+  return Container(
+  decoration: const BoxDecoration(
+  image: DecorationImage(
+  image: AssetImage(
+  'lib/assets/u4.jpg',
+  ), 
+  fit: BoxFit.cover,
+  ),
+  ),
+   
+  child: Scaffold(
+  
+  backgroundColor: Colors.transparent,
+  
+  
+  appBar: AppBar(
+  automaticallyImplyLeading: false,
+  backgroundColor: Colors.transparent,
+  title:  const Center(
+  child: Text(
+  'SignUp UI',
+  textAlign: TextAlign.center,
+  style: TextStyle(
+  fontSize: 24,
+  color: Colors.white,
+  fontWeight: FontWeight.bold,
+  ),
+  ),
+  ),
+  ),
+          
+  
+  
+  body: Stack(
+  children: [
+              
+  SingleChildScrollView(
+    child: Column(
+    
+    mainAxisAlignment: MainAxisAlignment.center,
+    crossAxisAlignment: CrossAxisAlignment.center,
+      
+    children: [
+      
+    const SizedBox(
+    height: 10,
+    ),
+    
+    
+    const Row(
+          
+    mainAxisAlignment: MainAxisAlignment.center,
+          
+    children: [
+            
+    Image(
+    image: AssetImage(
+    'lib/assets/p1.png', 
+    ),
+    height: 75,
+    width: 75,
+    ),
+    
+            
+    SizedBox(
+    width: 10,
+    ),
+    
+            
+    Text(
+    'RMUR \nDevelopers',
+    style: TextStyle(
+    fontSize: 28,
+    color: Colors.white,
+    fontWeight: FontWeight.bold
+    ),
+    ),
+    ],
+    ),
+    
+    const SizedBox(
+    height: 20,
+    ),
+    
+    Center(
+    
+    child: Container(
+    
+    height: 350,
+    width: 350,
+    
+    decoration: BoxDecoration(
+    color: Colors.amber,
+    borderRadius: BorderRadius.circular(20),
+    ),
+    
+    child: Column(
+                
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+                
+      children: [
+    
+    Padding(
+      padding: const EdgeInsets.only(
+      left: 15,
+      right: 15,
+      top: 10,
+      bottom: 10,
+      ),
+                  
+    child: TextFormField(
+      decoration: InputDecoration(
+      hintText: 'Name',
+      prefixIcon: const Icon(
+      Icons.account_circle,
+      color: Colors.pink,
+      ),
+    
+      fillColor: Colors.white,
+      filled: true,
+    
+      focusedBorder: OutlineInputBorder(
+      borderSide:  const BorderSide(
+      color: Colors.blue,
+      ),
+    
+      borderRadius: BorderRadius.circular(10),
+      ),
+                  
+      enabledBorder: OutlineInputBorder(
+      borderSide:  const BorderSide(
+      color: Colors.blue,
+      ),
+                  
+      borderRadius: BorderRadius.circular(10),
+      ),
+      ),
+      ),
+      ),
+                
+                
+    Padding(
+      padding: const EdgeInsets.only(
+      left: 15,
+      right: 15,
+      top: 10,
+      bottom: 10,
+      ),
+    
+    
+    child: TextFormField(
+      decoration: InputDecoration(
+      hintText: 'Email',
+      prefixIcon: const Icon(
+      Icons.email_sharp,
+      color: Colors.pink,
+      ),
+                  
+      fillColor: Colors.white,
+      filled: true,
+    
+      focusedBorder: OutlineInputBorder(
+      borderSide:  const BorderSide(
+      color: Colors.blue,
+      ),
+                  
+      borderRadius: BorderRadius.circular(10),
+      ),
+    
+      enabledBorder: OutlineInputBorder(
+      borderSide:  const BorderSide(
+      color: Colors.blue,
+      ),
+      
+      borderRadius: BorderRadius.circular(10),
+      ),
+      ),
+      ),
+      ),
+          
+                
+          
+    Padding(
+      padding: const EdgeInsets.only(
+      left: 15,
+      right: 15,
+      top: 10,
+      bottom: 10,            
+      ),
+    
+    child: TextFormField(
+      decoration: InputDecoration(
+      hintText: 'Contact',
+      prefixIcon: const Icon(
+      Icons.call,
+      color: Colors.pink,
+      ),
+      fillColor: Colors.white,
+      filled: true,
+      focusedBorder: OutlineInputBorder(
+      borderSide:  const BorderSide(
+      color: Colors.blue,
+      ),
+                  
+      borderRadius: BorderRadius.circular(10),
+      ),
+                  
+      enabledBorder: OutlineInputBorder(
+      borderSide:  const BorderSide(
+      color: Colors.blue,
+      ),
+      
+      borderRadius: BorderRadius.circular(10),
+      ),
+      ),
+      ),
+      ),
+          
+    
+    Padding(
+      padding: const EdgeInsets.only(
+      left: 15,
+      right: 15,
+      top: 10,
+      bottom: 10,
+      ),
+                  
+    child: TextFormField(
+      decoration: InputDecoration(
+      hintText: 'Password',
+      hintStyle: const TextStyle(
+      fontWeight: FontWeight.bold,
+      ),
+      prefixIcon: const Icon(
+      Icons.password_sharp,
+      color: Colors.pink,
+      ),
+      
+      fillColor: Colors.white,
+      filled: true,
+                  
+      focusedBorder: OutlineInputBorder(
+      borderSide:  const BorderSide(
+      color: Colors.blue,
+      ),
+                  
+      borderRadius: BorderRadius.circular(10),
+      ),
+                  
+      enabledBorder: OutlineInputBorder(
+      borderSide:  const BorderSide(
+      color: Colors.blue,
+      ),
+                  
+      borderRadius: BorderRadius.circular(10),
+      ),
+      ),
+      ),
+      ),
+    
+    
+                  
+      ],
+      ),
+    ),
+    ),
+    
+    
+    
+    const SizedBox(
+    height: 30,
+    ),
+    
+    Center(
+    
+    child: Container(
+    height: 50,
+    width: 150,
+    
+    decoration: BoxDecoration(
+    color: Colors.pink,
+    borderRadius: BorderRadius.circular(10),
+    ),
+    
+    
+    child: const Center( 
+    child:  Text(
+    'Sign Up',
+    style: TextStyle(
+    color: Colors.white,
+    fontSize: 26,
+    fontWeight: FontWeight.bold,
+    ),
+    ),
+    ),
+    ),
+    ),
+    
+    const SizedBox(
+    height: 4,
+    ),
+    
+    
+    Row(
+    
+    mainAxisAlignment: MainAxisAlignment.center,
+    
+    children: [
+    
+    const Text(
+    'Already Have an account?',
+    style: TextStyle(
+    fontSize: 14,
+    color: Colors.white,
+    fontWeight: FontWeight.bold,
+    ),
+    ),
+    
+    const SizedBox(
+    width: 2,
+    ),
+    
+    
+    
+    TextButton(
+    onPressed: () 
+    {
+      Navigator.push(
+      context, MaterialPageRoute(
+      builder: (context) => const SignInScreen(),
+      ),
+      );
+    },
+    child: const Text(
+    'SignIn',
+    style: TextStyle(
+    fontSize: 22,
+    color: Colors.white,
+    fontWeight: FontWeight.bold,
+    ),
+    ),
+    ),
+    
+    ],
+    ),
+    ],
+    ),
+  ),
+  ],
+  ),
+  ),
+  );
+  }
+}
